@@ -2,7 +2,7 @@ class Sorting:
     def __init__(self,n,data):
         self.n=n
         self.data=data
-    def Bubble_sort_ascending(self):                #ascending sort using bubble sort
+    def Selection_sort_ascending(self):                #ascending sort using selection sort
         for i in range(self.n-1,0,-1):
             maxi=self.data[i]
             count=i
@@ -14,7 +14,7 @@ class Sorting:
 
         return self.data
     
-    def Bubble_sort_decending(self):                #decending sort using bubble sort
+    def Selection_sort_decending(self):                #decending sort using selection sort
         for i in range(0,self.n-1):
             maxi=self.data[i]
             count=i
@@ -31,5 +31,5 @@ class Sorting:
 n=int(input())
 data=list(map(int,input().split()))
 obj1=Sorting(n,data)
-print(*obj1.Bubble_sort_ascending())            # here "*" is for printing the all elements normally
-print(*obj1.Bubble_sort_decending())
+print(*obj1.Selection_sort_ascending())            # here "*" is for printing the all elements normally
+print(*obj1.Selection_sort_decending())
