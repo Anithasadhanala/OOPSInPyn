@@ -20,8 +20,15 @@ bond_level=int(input())
 clas=input()
 institution=input()
 ranking=int(input())
+                                                                    #******************************************************************************
+friend1=Close_friend(ranking,name,bond_level,clas,institution)      # here we cant give vales to parent class seperately because it is used as parent
+                                                                    #  in another sub class so........we give parent's and child's values directly to the child's obj
 
-friend1=Close_friend(ranking,name,bond_level,clas,institution)  
+
+
+
+
+
 friend1.display()                                                   #here we are calling the method present in
                                                                     # both the classes so,the preference is sub
                                                                     # class.so,first give the values for sub class
