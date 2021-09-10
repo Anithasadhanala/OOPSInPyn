@@ -1,12 +1,12 @@
 class Family:                                   #Parent class
-    me="Anitha"            
-    def __init__(self,father,mother,son):
-        self.father=father
-        self.mother=mother   
-        self.son=son
-    def member(self):
-        print(Family.me)     
-        print(self.father)    
+    me="Anitha"                                                                               #         Family
+    def __init__(self,father,mother,son):                                                     #           |
+        self.father=father                                                                    #     Superfamily
+        self.mother=mother                                                                    #           |
+        self.son=son                                                                          #     Marvelfamily
+    def member(self):                                                                         #  
+        print(Family.me)                                                                      #
+        print(self.father)                                                                    
 
         
 class Superfamily(Family):                      #subclass of Family class and parent to Marvelfamily subclass
